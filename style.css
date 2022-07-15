@@ -1,0 +1,209 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+box-sizing: inherit;
+}
+body{
+ font-family: 'Edu VIC WA NT Beginner', cursive; 
+ margin: 0;
+ 
+ color: #A1E3D8;
+}
+img {
+    width: 100%;
+}
+.hero-navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005555;
+}
+.hero-navbar nav{
+    padding: 0 20px;
+    display: flex;
+    gap: 1.9rem;
+    
+}
+.hero-navbar nav a {
+    font-size: 1rem;
+    color: #A1E3D8;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+.hero-navbar nav a:hover{
+    color: white;
+    
+    
+}
+.hero-container{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #005555;
+}
+
+.hero-img-container{
+    width: 150px;
+    height: 150px;
+    
+    
+}
+.hero-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+
+.wrapper{
+    
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+}
+.wrapper p{
+    
+    color: #005555;
+}
+
+.hero-title, .hero-subtitle{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.hero-subtitle{
+    font-size: clamp(16px, 2vw, 50px);
+}
+.hero-social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: 38px;
+  }
+  
+  .hero-social i {
+    font-size: 28px;
+    color: white;
+    transition: all .3s ease-in-out;
+  }
+  
+.hero-info{
+    text-align: center;
+    padding-top: 30px;
+}
+.about{
+    padding: 5rem 20px;
+}
+.about-title{
+    font-size: 2rem;
+}
+.skills{
+    padding: 5rem 20px;
+}
+.skills span{
+    color: #005555;
+}
+.skills-title{
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    grid-template-rows: 200px 200px;
+    
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skill-item i{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #005555;
+    font-size: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content{
+   width: 100%;
+   max-width: 1200px;
+   height: 430px; 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+.content .card{
+  width: 165px;
+  height: 215px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);  
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.content .card:hover{
+transform: translateY(-15px); 
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); ;   
+}
+.content .card img{
+    width: 165px;
+    height: 110px;
+}
+.content .card h4{
+    font-weight: 600;
+}
+.content .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.content .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #005555;
+}
+.hero-wave{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .hero-navbar nav a:not(a:last-child) {
+    display: inline-block;
+    margin-right: 25px;
+    flex-direction: column;
+  }
+
+  .services .cards-container .card {
+    width: 30%;
+    display: table-cell;
+  }
+
+  .projects img {
+    width: 24%;
+  }
+}
+
